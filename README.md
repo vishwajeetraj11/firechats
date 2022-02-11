@@ -72,4 +72,4 @@ const next = query(collection(db, "cities"),
 ```
 
 ## Deployment  
-**After deployment, please add your domain to firebase console > authentication > sign in methods > authorized domains **
+**After deployment, please add your domain to firebase console > authentication > sign in methods > authorized domains**
