@@ -85,6 +85,7 @@ export const ChatMessages: React.FC<Props> = () => {
         <div
           ref={messagesContainerRef}
           className="flex flex-col flex-1 overflow-y-auto"
+          style={{ minHeight: "90vh" }}
         >
           {messages.map((message) => (
             <Message key={message.id} {...message} />
