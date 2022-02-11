@@ -70,3 +70,6 @@ const next = query(collection(db, "cities"),
     startAfter(lastVisible),
     limit(25));
 ```
+
+## Deployment  
+**After deployment, please add your domain to firebase console > authentication > sign in methods > authorized domains **
