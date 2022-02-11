@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+<img width="813" alt="image" src="https://user-images.githubusercontent.com/47270995/153465507-52b949be-d08f-41ee-aa1a-9e6a1f8f48a5.png">
+
+# Firechats
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +70,6 @@ const next = query(collection(db, "cities"),
     startAfter(lastVisible),
     limit(25));
 ```
+
+## Deployment  
+**After deployment, please add your domain to firebase console > authentication > sign in methods > authorized domains**
