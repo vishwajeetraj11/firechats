@@ -111,9 +111,6 @@ export const Modal: React.FC<Props> = ({ title, isOpen, onClose, chats }) => {
                     initialValues={{
                       user: "",
                     }}
-                    // validateOnChange={false}
-                    // validateOnBlur={false}
-                    // validateOnMount={false}
                     validationSchema={ValidationSchema}
                     onSubmit={(values, { setSubmitting, resetForm }) => {
                       setSubmitting(true);
@@ -145,8 +142,9 @@ export const Modal: React.FC<Props> = ({ title, isOpen, onClose, chats }) => {
                               setFieldValue("user", e.target.value);
                             }}
                             value={values.user}
+                            disabled={isSubmitting}
                             className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                            placeholder="Email address"
+                            placeholder="Enter Name"
                           />
                           <p className="text-rose-600 text-xs mt-1">
                             {errors.user}
